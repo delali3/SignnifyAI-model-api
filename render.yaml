@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gesture-model-api
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn app:app --worker-class eventlet -w 1 --bind 0.0.0.0:10000
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    autoDeploy: true

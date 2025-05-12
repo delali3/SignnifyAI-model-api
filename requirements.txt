@@ -1,9 +1,5 @@
 Flask
-Flask-SocketIO
-opencv-python-headless
-mediapipe
+flask-socketio
 numpy
-gunicorn
 eventlet
-python-socketio
-Werkzeug
+gunicorn
