@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sign-lang-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python mobile_api.py
+    plan: free
